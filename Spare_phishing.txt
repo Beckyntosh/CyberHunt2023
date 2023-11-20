@@ -1,0 +1,156 @@
+From 1782203085855@xxx Fri Nov 10 18:35:09 +0000 2023
+X-GM-THRID: 1782203085883855
+X-Gmail-Labels: Archived,Opened,Category Social
+Delivered-To: CFO_cyberhunt2023Test@cyberhunt.io
+Received: by 2002:abc:ec4e:0:b0:31f:e828:86f4 with SMTP id z14csp9t44260wrn;
+        Fri, 10 Nov 2023 10:35:10 -0800 (PST)
+X-Received: by 2002:abc:ec4e:0:b0:31f:e828:86f4 with SMTP id v3-20020a67f6c30045f4e559c55mr186710vso.17.1699641309941;
+        Fri, 10 Nov 2023 10:35:09 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1699641309; cv=none;
+        d=google.com; s=arc-20160816;
+        b=PMb31U6mUt2mR1I90sYuKpVDeZBhKYzOoYB6RCmnX7kSIfPCFlny/OmoP
+         Zir0LhawCV2o5o8Ckm+epdiLMuSDB/t6X1MCfHxmgt+qv68zuryMaclPQz/eSvSsIoq0
+         kT78+Ei/VWXA4+c8ogegg13WCZTXyazy05fC954D+2Waje4pY
+         0FjNDMSZsx3yfbkf4dRTq/2mUe3tx6PqgrgQJWT88GVyYq+IIAmzqJ67IvGcKyAjDgw6
+         If1Dtc+3xTjkFkbNUvK6guncP9XwnShM/Yogh9xP0
+         Dgfw==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:mime-version:dkim-signature;
+        bh=LnPp2FJGiaH/BTeRTVFqe4PgtAYyAQ+6Hv54z3kMtS0=;
+        fh=+mtQBySscW3KmQav4+MK4tkqI0eO+zu1Z5zjAAcuDqw=;
+        bAjuv8gSOLXU9+Z8HewoPFr52UxVUlIL53EStR/9erLBFcZo45ttYOV0FN9yJBZpsflo
+         S9TlarpwP0V+R5lpMVXdQncgFOWAEgruRxr9abEz
+         oH7CIKkB563x4eEVnWM+iqgk2/M7zhP/7VZeQnCKAiaC1eoG7ED8cP8sRWG
+         /KsQ==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@cyberhu.no header.s=google header.b=U6lzw8;
+       spf=pass (google.com: domain of info@fortune500.no designates 209.85.220.41 as permitted sender) smtp.mailfrom=info@fortune500.no;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=ififui.no
+Return-Path: <info@fortune500.no>
+Received: from mail-sor-f41.google.com (mail-sor-f41.google.com. [209.85.220.41])
+        by mx.google.com with SMTPS id ej5-20020a056102474500b0045bf881c53bsor6743vsb.15.2023.11.10.10.35.09
+        for <CFO_cyberhunt2023Test@cyberhunt.io>
+        (Google Transport Security);
+        Fri, 10 Nov 2023 10:35:09 -0800 (PST)
+Received-SPF: pass (google.com: domain of info@fortune500.no designates 209.85.220.41 as permitted sender) client-ip=209.85.220.41;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@ififui.no header.s=google header.b=U6valzw8;
+       spf=pass (google.com: domain of info@fortune500.no designates 209.85.220.41 as permitted sender) smtp.mailfrom=info@fortune500.no;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=ififui.no
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=ififui.no; s=google; t=16991309; x=17006109; dara=google.com;
+        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=LnPp2FJGiaH/BTeRTVFqe4PgtAYyAQ+6Hv54z3kMtS0=;
+        b=U6valzw8umyFmNzhYzHURqlgpkI9mhLwYg8NgjFJnSYL6qVeEbUeBjnUCV5ZzasY
+         6m6CJbRBlv6HK6zbqDr2l5KtQ/bwTcSHUZobVEj5WalgR/dmPau+DZjsNAjGAdd/08ZK1ou39TsoyPzNx3e1bxKO3tSA7
+         tTf9NugOVRL5jwGRBawukpzC7KjNam1holVRDg4Qajh/Wdi+TUPEqI9+u
+         hwk++AAc5SWWU9VCX6W/bwlMm7vurya3APUHFveL0eshYLbHEX+YU5
+         zSMg==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20230601; t=1699641309; x=1700246109;
+        h=to:subject:message-id:date:from:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=LnPp2FJGiaH/BTeRTVFqe4PgtAYyAQ+6Hv54z3kMtS0=;
+        b=jOp1soIEAoOXwiO4eQLIXmyStoTBmw/XlUXFb5peN/YN1+L6h7gsJsBzuZjRvym5/H
+         oIqjBN8v4anFoj5t55YYMtuccGxTps0mUR3JfkRtNY7Di
+         FQbYrgHvQB/nfFUmVFYbQo+NkY5MwYnLx7Amcn75p2Rsi23w/h28LEj2Mj+0rq5NO6nv
+         AD15IrZusJn7UwLxJLcXJ0JbHoEaeFqNjfYnTqE7onokcKg44t/Zhkh25xQaCqcc2ekd
+         nMDw==
+X-Gm-Message-State: AOJu0YyfIyimwIoZI/I3Ob/fCOMNYvC0DsDyT2BuMGP/Hx3Hxwm
+	nEZsI8jq3MoxDERs/Ewb7Ei2Co4byCXdoicgnxH8GnVuVI0ilwHD
+X-Google-Smtp-Source: AGHT+IEU3/3I2mj+Nklijywv1/FRd27YBkPgXxa7wLxZ/2LBQ0bGMsP0EWTNcx+wW9FxWycekOqNq5vWfeCssfTyhzM=
+X-Received: by 2002:a67:c399:0:b0:45f:642e:41c with SMTP id
+ s25-20020a67c399000b0045f6441cmr243745vsj.13.1699641309093; Fri, 10 Nov
+ 2023 10:35:09 -0800 (PST)
+MIME-Version: 1.0
+From: =?UTF-8?Q?FOu500=2D=C3=98veeir?= <info@fortune500.no>
+Date: Fri, 10 Nov 2023 19:34:58 +0100
+Message-ID: <CAPbXydPX0N_-rG3-4oN1ntwqxzQ-4VUOMzmn+5ue=4w@mail.gmail.com>
+Subject: =?UTF-8?Q?=C3=85Fortune500Nomination?=
+To: CFO_cyberhunt2023Test@cyberhunt.io
+Content-Type: multipart/alternative; boundary="000000000797c8d0609d094c7"
+
+--00000000000079709d094c7
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+Dear CFO,
+
+You have been nominated to 2023 Best Green Project of the Year for your Sigma green project.</div></div>
+
+
+For =C3=A5 for more information click here:
+<http://564523CA.example.com/>
+
+Kind regards,
+Your friends at Fortune 500
+
+--000000000000797c8d0609d094c7
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">Dear CFO,=C2=A0<div><br></div><div>You have been nominated to 2023 Best Green Project of the Year for your Sigma green project.</div></div>
+
+--000000000097c8d0609d094c7--
+
+From 1781889418193654@xxx Tue Nov 07 07:30:10 +0000 2023
+X-GM-THRID: 1781889457718193654
+X-Gmail-Labels: Inbox,Opened,Category Social
+Delivered-To: CFO_cyberhunt2023Test@cyberhunt.io
+Received: by 2002:a05:6000:1370:b0:31f:e828:87e4 with SMTP id q16csp53103wrz;
+        Mon, 6 Nov 2023 23:30:10 -0800 (PST)
+X-Received: by 2002:a25:328d:0:b0:d7f:1749:9e59 with SMTP id y135-20020a25328d000000b00d7f17499e59mr25469211yby.11.1699342210282;
+        Mon, 06 Nov 2023 23:30:10 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1699342210; cv=none;
+        d=google.com; s=arc-20160816;
+        b=xhWjLPXfYK8JwZ61QdrGxMmlBWWkIQ/CVI9tUDEdFUAnbBwoLX3zmQJfgzZ14vE0td
+         Auf91P+PlMiLO2FBu6Rpoei02quMeIhqp8eBjRf8AbwkPqrFy99tfCwFyUyRryBt
+         umS3T5cQ71py839Z2PvxRbIeTrUqgN7fCG6P9EIwQ+pqoYxmnYpSL/mHaA4N/AuHk2yx
+         97VilcoMFQ0JihJ0c47tPeLiYGhNuFmTeJBxy/ul7NGSDOWyQXvRPbr1NyncM9dJnMYg
+         uromZLI0U/Eg3Tbf2x90KY52McKjpfea7hg2r8uNCZhYI0XBKFt8GNuprlrncnRBECcc
+         3BFg==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:mime-version:dkim-signature;
+        bh=lUHeuvWujqWFnC8AIYZ8N99+YqnvyQfTYJVmAM5Z4zI=;
+        fh=+mtQBySscW3KmQav4+MK4tkqI0eO+zu1Z5zjAAcuDqw=;
+        b=RDZ1ZyUse0YEnAw01ywNktVLRATPpv+wPjd4BSjFmIThpnKvaK7RhQfHFY+L2Ieqht
+         KTKGOcCegvJXBBMwuxKfhbSqep5fk6pxTNlS8s7Lv9WGWef48moyBx
+         +Vl3cRz+GS8McF0HrEspma26Q1O0ILs3mZLjJ4DAkJJkVnl7YENxLNiEGajv3A1/Dkkq
+         yfnf8Q30VeyTlfrGAERO+c96hGucg9B1LuNfcr2HpzFvqRpY2118lmpz/ZXMqngXjS5T
+         Cj+A==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20230601 header.b=h8o6eGfO;
+       spf=pass (google.com: domain of per.hbholm@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=per.hbholm@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Return-Path: <per.hbholm@gmail.com>
+Received: from mail-sor-f41.google.com (mail-sor-f41.google.com. [209.85.220.41])
+        by mx.google.com with SMTPS id y4-20020a62ce04000000b0069023fe04f3sor3677141pfg.3.2023.11.06.23.30.09
+        for <CFO_cyberhunt2023Test@cyberhunt.io>
+        (Google Transport Security);
+        Mon, 06 Nov 2023 23:30:10 -0800 (PST)
+Received-SPF: pass (google.com: domain of per.hbholm@gmail.com designates 209.85.220.41 as permitted sender) client-ip=209.85.220.41;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20230601 header.b=h8o6eGfO;
+       spf=pass (google.com: domain of per.hbholm@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=per.hbholm@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=202601; t=16993209; x=16947009; dara=google.com;
+        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=lUHeuvWujqWFnC8AIYZ8N99+YqnvyQfTYJVmAM5Z4zI=;
+        b=h8o6eGfOA/lid53R4fB683bKRI3I2O7HQnD74Hq9oKNPE7TXVKw3DQ7gqOrLYVZCxx
+         E8T9iWzH4lN6kt7ssYjmI7ZY+3PWDAn3EjL8oNjjWqa8wSvwc
+         qTSZKIO/N+TAarA+oBXOdVHJS9aiKrfAX6EHYJm7ws2G/loB/dbZZNEUXF5ntp2iiJ6+
+         9BLwznvMCP8x583e/sVRYUq0t5qTP93ff1gxATasa7ckWRGpjaPE+mv69aksmxKzuoom
+         2zzKjP5a02J5KEBk2E5CpaL7JmblT7sVtEbO15kn91tFNJdW/TsZDdRq5gwDTKXm4KrP
+         AIYQ==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20230601; t=1699342209; x=1699947009;
+        h=to:subject:message-id:date:from:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=lUHeuvWujqWFnC8AIYZ8N99+YqnvyQfTYJVmAM5Z4zI=;
+        b=YIcZm7p7qDQEGRsSFt203yi/J13ABZxqKTVofHrpIul5fFGNqOW4UKAldCpv9Z5TSY
+         y/lG4+AJt6Aek3QnuL/V8LEEbZ0z3VyJTFcrf8R0kxwYemEjeF//Qix2cgYNl4PSqO8J
+         Z96lyVROF/72qAxB2xRc+8ylbgzVxwoUwXA5TdXiumN2ihIGgyuEG4rlJAkV6TGvclD6
+         7bP9dU8hhKJ4d9mc/7ee6ydwfSARvPOl7OUyTfRITsqmYxrSCXoG/8ckTJ0O9csJjIC7
